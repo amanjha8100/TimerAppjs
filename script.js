@@ -28,14 +28,14 @@ function star(event){
     console.log(h.value);
     console.log(m.value);
     console.log(s.value);
-    if(h.value > 24){
+    if(h.value > 24 || h.value < 0){
         return alert("Invalid hours input");
     }
-    else if(m.value > 60)
+    else if(m.value > 60 || m.value < 0)
     {
         return alert("Invalid minutes input");
     }
-    else if(s.value > 60){
+    else if(s.value > 60 || s.value < 0){
         return alert("Invalid seconds input")
     }
     else{
