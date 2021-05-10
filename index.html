@@ -9,50 +9,74 @@
         <title>Timer App</title>
     </head>
     <body>
-        <div class="container pt-4 pb-4">
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="hours" placeholder="Hour">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="minutes" placeholder="Minutes">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="seconds" placeholder="Seconds">
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-danger btn-black" id="start">
-                        Start
-                    </button>
-                    <button class="btn btn-danger btn-black" id="reset">
-                        Reset
-                    </button>
-                </div>
-            </form>
-        </div>
-        <div class="container special">
-            <div class="row">
-                <div class="col">
-                    <div class="timer">
-                        <p id="hour"></p>
-                        <h6>Hours</h6>
+        <div class="container con">
+            <div class="container special">
+                <div class="row">
+                    <div class="col">
+                        <div class="timer">
+                            <p id="hour"></p>
+                            <h6>Hours</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="timer">
+                            <p id="minute"></p>
+                            <h6>Minutes</h6>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="timer">
+                            <p id="second"></p>
+                            <h6>Seconds</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="timer">
-                        <p id="minute"></p>
-                        <h6>Minutes</h6>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="timer">
-                        <p id="second"></p>
-                        <h6>Seconds</h6>
-                    </div>
-                </div>
+    
             </div>
-
+    
+            <div class="container pt-4 pb-4">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="hours" placeholder="Hour">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="minutes" placeholder="Minutes">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="seconds" placeholder="Seconds">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="form-group">
+                        <input type="number" class="form-control" id="hours" placeholder="Hour">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="minutes" placeholder="Minutes">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="seconds" placeholder="Seconds">
+                    </div> -->
+                    <div class="form-group">
+                        <button class="btn btn-success btn-black" id="start">
+                            Start
+                        </button>
+                        <button class="btn btn-danger btn-black" id="stop">Stop</button>
+                        <button class="btn btn-primary btn-black" id="reset">
+                            Reset
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
+        
+
 
         <!-- <div class="timer">
             <p id="hour"></p>
