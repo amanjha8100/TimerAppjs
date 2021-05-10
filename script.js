@@ -47,7 +47,7 @@ function star(event){
     mi = m.value;
     se = s.value;
     
-    //task(hr,mi,se);
+    
     startTimer(hr,mi,se);
     
 }
@@ -95,7 +95,7 @@ function task(){
         stopTimer();
         alert("Timer completed");
     }
-    //se--;
+    
     document.getElementById("hour").innerHTML = hr;
     document.getElementById("minute").innerHTML = mi;
     document.getElementById("second").innerHTML = se;
